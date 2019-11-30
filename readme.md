@@ -12,6 +12,23 @@
 
 
 
+<p>в файле .env</p>
+<p>необходимо настроить подключение к бд и параметры почты</p>
+
+регистрация
+<img src="https://github.com/ulskHeprit/hackathon_error2/blob/master/reg.png?raw=true">
+login
+<img src="https://github.com/ulskHeprit/hackathon_error2/blob/master/login.png?raw=true">
+список всех проектов
+<img src="https://github.com/ulskHeprit/hackathon_error2/blob/master/projects.png?raw=true">
+страница проекта с информацией о подписанных пользователей
+<img src="https://github.com/ulskHeprit/hackathon_error2/blob/master/project.png?raw=true">
+страница проекта с кнопкой подписки
+<img src="https://github.com/ulskHeprit/hackathon_error2/blob/master/sub.png?raw=true">
+пример письма
+<img src="https://github.com/ulskHeprit/hackathon_error2/blob/master/mail.png?raw=true">
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
