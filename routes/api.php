@@ -33,12 +33,18 @@ Route::post('/sub', function(Request $request) {
    $subs = Subscription::where('project_id', $project->id)->get();
    foreach ($subs as $sub) {
        $sub->user = User::find($sub->user_id);
-       //return $sub->user;
+
+       $mes = new \App\Message();
+       $mes->project_id = $project->id;
+       $mes->message = $message;
+
+       $mes->save();
        Mail::send('email.mail', $data, function($message) use ($sub, $project) {
            $message->to($sub->user->email, 'Tutorials Point')->subject
            ("{$sub->user->name}, some error happened in Project: {$project->name}");
            $message->from('xumuk495.xx@gmail.com', "🚨 {$sub->user->name} ALARM!!! 🚨");
        });
+
    }
    return "ok";
 });
