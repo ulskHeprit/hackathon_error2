@@ -46,5 +46,5 @@ Route::post('/sub', function(Request $request) {
        });
 
    }
-   return "ok";
+   return response('successfully', 200);
 });
